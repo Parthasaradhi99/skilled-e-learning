@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+
+:root {
+    --blue-hover: #666ca3;
+    --blue: #13183f;
+    --text-gray: #83869a;
+    --main-orange: #f74780;
+    --main-pink: #ffa7c3;
+    --white: #ffffff;
+    --primary-gradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+    --secondary-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+  }
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    color : black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    /* width: 100%; */
+}
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    font-weight: 500;
+}
+
+/* Hero image */
+.hero-image{
+    background-image: url("./assets/image-hero-desktop.png");
+    /* width : 500px;
+    height: 400px; */
+    background-position: 200px -120px;
+}
+/* Utility clases */
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    max-width: 80vw;
+    margin: 25px auto;
+    z-index: -1;
+}
+
+.button{
+    padding : 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius : 20px;
+    background-color: white;
+    background-color: var(--blue);
+    cursor : pointer;
+    color: white;
+}
+
+.main-wrapper h1{
+    font-size: 3.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    color : var(--blue);
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.main-wrapper p{
+    color : var(--text-gray);
+    margin : 20px 20px;
+}
+
+.main-wrapper button{
+    background : var(--primary-gradient);
+    padding : 20px 30px;
+    margin : 10px 20px;
+    border-radius: 30px;
+    font-size : 1.2rem;
+    /* font-weight: bold; */
+    color : white;
+}
+
+.container h1:nth-child(1){
+    padding-top: 90px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+}
+
+.card{
+    background-color: var(--white);
+    padding : 10px;
+    margin : 20px;
+    display: flex;
+    align-content: space-between ;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.specialities p{
+    color : var(--text-gray);
+    margin : 20px 5px;
+}
+
+.specialities h1{
+    font-size: 1.5rem;
+    margin : 20px 5px;
+    font-weight: 700;
+}
+
+.specialities span{
+    margin : 30px 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color : var(--main-orange)
+}
+
+.card:nth-child(1){
+    background : var(--primary-gradient);
+}
+.card:nth-child(1) p{
+    color : white;
+    font-size: 2rem;
+    margin: 90px 30px;
+    font-weight: 600;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue);
+    padding : 20px 100px
+}
+
+footer h1{
+    color : white
+}
+
+footer a {
+    background: var(--primary-gradient);
+}
